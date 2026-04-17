@@ -3015,3 +3015,127 @@ input, select, textarea {
 						}
 
 	}
+
+/* =============================================
+   Teekafy Custom Additions
+   ============================================= */
+
+/* Nav CTA button */
+#nav > ul > li > a.nav-cta {
+    background: #ffbd59;
+    color: #fff !important;
+    padding: 0 1.25em;
+    border-radius: 0.35em;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin-top: 1.25em;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+}
+
+#nav > ul > li > a.nav-cta:hover {
+    background: #d8a14d;
+}
+
+/* Post category tags */
+.post-tag {
+    display: inline-block;
+    background: #fff3d4;
+    color: #9a6f00;
+    font-size: 0.65em;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.35em 0.9em;
+    border-radius: 0.25em;
+    margin-bottom: 0.75em;
+    border: 1px solid #ffbd59;
+}
+
+/* Free resource banner */
+.resource-banner {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    background: #fff8ec;
+    border: 1px solid #ffe0a0;
+    border-radius: 0.5em;
+    padding: 2.5em 3em;
+    margin: 0 auto;
+    max-width: 56em;
+}
+
+.resource-visual {
+    flex-shrink: 0;
+}
+
+.planner-mockup {
+    width: 90px;
+    height: 115px;
+    background: #2f333b;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 4px 4px 0 #ffbd59;
+}
+
+.planner-mockup span {
+    color: #ffbd59;
+    font-size: 0.6em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+
+.resource-content h2 {
+    font-size: 1.4em;
+    letter-spacing: 0.025em;
+    margin-bottom: 0.5em;
+    color: #484d55;
+}
+
+.resource-content p {
+    color: #717479;
+    font-size: 0.95em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+.resource-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5em 0;
+}
+
+.resource-checklist li {
+    padding: 0.2em 0 0.2em 1.5em;
+    position: relative;
+    font-size: 0.9em;
+    color: #484d55;
+}
+
+.resource-checklist li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #ffbd59;
+    font-weight: 700;
+}
+
+/* Resource banner responsive */
+@media screen and (max-width: 736px) {
+    .resource-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 2em 1.5em;
+        gap: 1.5em;
+    }
+
+    .resource-checklist li {
+        text-align: left;
+    }
+}

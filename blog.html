@@ -1,0 +1,780 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Your Best Year Yet — Teekafy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Define your personal values and goals, break them into small actionable steps, and build the consistent habits that make them stick." />
+
+		<!-- Open Graph tags for Pinterest sharing -->
+		<meta property="og:title" content="Your Best Year Yet — Teekafy" />
+		<meta property="og:description" content="Define your values, set real goals, and build habits that actually stick. A practical guide for students and early professionals." />
+		<meta property="og:image" content="images/Your Best.png" />
+		<meta property="og:type" content="article" />
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+
+			/* =============================================
+			   Blog Post Styles
+			   ============================================= */
+
+			/* Post header hero */
+			.post-hero {
+				background: #2f333b;
+				padding: 3em 0 2.5em;
+				text-align: center;
+				margin-bottom: 0;
+			}
+
+			.post-hero .post-tag {
+				display: inline-block;
+				background: #ffbd59;
+				color: #fff;
+				font-size: 0.65em;
+				font-weight: 700;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				padding: 0.4em 1em;
+				border-radius: 0.25em;
+				margin-bottom: 1em;
+			}
+
+			.post-hero h2 {
+				color: #fff !important;
+				font-size: 1.8em;
+				line-height: 1.3em;
+				letter-spacing: 0.025em;
+				max-width: 36em;
+				margin: 0 auto 0.75em;
+				padding: 0 2em;
+			}
+
+			.post-meta {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 1.5em;
+				flex-wrap: wrap;
+			}
+
+			.post-meta span {
+				color: rgba(255, 255, 255, 0.55);
+				font-size: 0.75em;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+			}
+
+			.post-meta span strong {
+				color: rgba(255, 255, 255, 0.8) !important;
+				font-weight: 700;
+			}
+
+			/* Table of contents */
+			.post-toc {
+				background: #fff8ec;
+				border: 1px solid #ffe0a0;
+				border-radius: 0.35em;
+				padding: 1.5em 2em;
+				margin-bottom: 2.5em;
+			}
+
+			.post-toc h4 {
+				color: #484d55;
+				font-size: 0.8em;
+				text-transform: uppercase;
+				letter-spacing: 0.12em;
+				margin-bottom: 0.75em;
+			}
+
+			.post-toc ol {
+				margin: 0;
+				padding-left: 1.25em;
+			}
+
+			.post-toc ol li {
+				padding: 0.25em 0;
+				font-size: 0.9em;
+			}
+
+			.post-toc ol li a {
+				color: #9a6f00;
+				text-decoration: none;
+				font-weight: 700;
+			}
+
+			.post-toc ol li a:hover {
+				color: #ffbd59;
+			}
+
+			/* Post body headings */
+			.post-body h3 {
+				color: #484d55;
+				font-size: 1.15em;
+				letter-spacing: 0.025em;
+				padding-bottom: 0.5em;
+				border-bottom: 2px solid #ffbd59;
+				display: inline-block;
+				margin-bottom: 1em;
+				margin-top: 2em;
+			}
+
+			.post-body h3:first-child {
+				margin-top: 0;
+			}
+
+			/* Highlight / pull quote boxes */
+			.post-highlight {
+				background: #fff8ec;
+				border-left: 4px solid #ffbd59;
+				padding: 1.25em 1.75em;
+				border-radius: 0 0.35em 0.35em 0;
+				margin: 1.75em 0;
+			}
+
+			.post-highlight p {
+				color: #7a5800;
+				font-size: 1em;
+				font-style: italic;
+				line-height: 1.6em;
+				margin: 0;
+			}
+
+			.post-highlight strong {
+				color: #7a5800 !important;
+			}
+
+			/* Numbered step blocks */
+			.post-steps {
+				counter-reset: step-counter;
+				margin: 1.5em 0;
+			}
+
+			.post-step {
+				display: flex;
+				gap: 1.25em;
+				margin-bottom: 1.75em;
+				align-items: flex-start;
+			}
+
+			.post-step-num {
+				flex-shrink: 0;
+				width: 2.25em;
+				height: 2.25em;
+				background: #ffbd59;
+				color: #fff;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 700;
+				font-size: 0.9em;
+				margin-top: 0.1em;
+			}
+
+			.post-step-content h4 {
+				color: #484d55;
+				font-size: 1em;
+				margin-bottom: 0.4em;
+			}
+
+			.post-step-content p {
+				margin-bottom: 0;
+				font-size: 0.95em;
+			}
+
+			/* In-post free resource CTA */
+			.post-resource-cta {
+				background: #2f333b;
+				border-radius: 0.35em;
+				padding: 2em 2.5em;
+				display: flex;
+				align-items: center;
+				gap: 2em;
+				margin: 2.5em 0;
+			}
+
+			.post-resource-cta .planner-thumb {
+				flex-shrink: 0;
+				width: 64px;
+				height: 80px;
+				background: #ffbd59;
+				border-radius: 3px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				padding: 6px;
+			}
+
+			.post-resource-cta .planner-thumb span {
+				color: #2f333b;
+				font-size: 0.55em;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.08em;
+				line-height: 1.4;
+			}
+
+			.post-resource-cta .cta-text h4 {
+				color: #ffbd59 !important;
+				font-size: 1em;
+				margin-bottom: 0.35em;
+			}
+
+			.post-resource-cta .cta-text p {
+				color: rgba(255, 255, 255, 0.65);
+				font-size: 0.88em;
+				margin-bottom: 0.85em;
+				line-height: 1.5em;
+			}
+
+			/* Author bio box */
+			.post-author-bio {
+				background: #f3f3f3;
+				border-radius: 0.35em;
+				padding: 1.75em 2em;
+				display: flex;
+				align-items: flex-start;
+				gap: 1.5em;
+				margin-top: 2.5em;
+			}
+
+			.author-avatar {
+				flex-shrink: 0;
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				background: #2f333b;
+				border: 3px solid #ffbd59;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 0.6em;
+				font-weight: 700;
+				color: #ffbd59;
+				text-align: center;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+			}
+
+			.author-bio-text h4 {
+				color: #484d55;
+				font-size: 0.9em;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				margin-bottom: 0.35em;
+			}
+
+			.author-bio-text p {
+				color: #717479;
+				font-size: 0.88em;
+				line-height: 1.6em;
+				margin: 0;
+			}
+
+			/* Related posts section */
+			.related-posts-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 1.5em;
+				text-align: left;
+			}
+
+			.related-post-card {
+				background: #fff;
+				border: 1px solid #eee;
+				border-radius: 0.35em;
+				overflow: hidden;
+			}
+
+			.related-post-card img {
+				width: 100%;
+				height: 120px;
+				object-fit: cover;
+				display: block;
+			}
+
+			.related-post-card .card-body {
+				padding: 1em 1.25em 1.25em;
+			}
+
+			.related-post-card .post-tag {
+				display: inline-block;
+				background: #fff3d4;
+				color: #9a6f00;
+				font-size: 0.62em;
+				font-weight: 700;
+				letter-spacing: 0.12em;
+				text-transform: uppercase;
+				padding: 0.3em 0.75em;
+				border-radius: 0.2em;
+				border: 1px solid #ffbd59;
+				margin-bottom: 0.6em;
+			}
+
+			.related-post-card h4 {
+				color: #484d55;
+				font-size: 0.9em;
+				line-height: 1.4em;
+				margin: 0;
+			}
+
+			.related-post-card h4 a {
+				color: inherit;
+				text-decoration: none;
+			}
+
+			.related-post-card h4 a:hover {
+				color: #ffbd59;
+			}
+
+			/* Breadcrumb */
+			.post-breadcrumb {
+				font-size: 0.8em;
+				color: #b1b4b9;
+				margin-bottom: 0;
+				letter-spacing: 0.05em;
+			}
+
+			.post-breadcrumb a {
+				color: #b1b4b9;
+				text-decoration: none;
+			}
+
+			.post-breadcrumb a:hover {
+				color: #ffbd59;
+			}
+
+			/* Sidebar */
+			#sidebar .box p {
+				font-size: 0.9em;
+				line-height: 1.6em;
+				color: #717479;
+			}
+
+			/* Responsive */
+			@media screen and (max-width: 736px) {
+				.post-hero h2 {
+					font-size: 1.35em;
+					padding: 0 1em;
+				}
+
+				.post-meta {
+					gap: 0.75em;
+				}
+
+				.post-resource-cta {
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 1em;
+					padding: 1.5em;
+				}
+
+				.post-author-bio {
+					flex-direction: column;
+				}
+
+				.related-posts-grid {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body class="about is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<section id="header" class="wrapper">
+
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="home.html">Teekafy</a></h1>
+					<p>Productivity · Skills · Career Growth</p>
+				</div>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li class="current">
+							<a href="home.html#highlights">Blog</a>
+							<ul>
+								<li><a href="home.html#highlights">Latest posts</a></li>
+								<li><a href="#">Your best year yet</a></li>
+								<li><a href="#">Discipline &gt; Motivation</a></li>
+								<li><a href="#">Now to Infinity</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+							<ul>
+								<li><a href="about.html#highlights">Disclaimer</a></li>
+							</ul>
+						</li>
+						<li><a href="privacy-policy.html">Privacy Policy</a></li>
+						<li><a href="#footer">Contact</a></li>
+						<li><a href="home.html#free-resource" class="button style1 nav-cta">Free Planner</a></li>
+					</ul>
+				</nav>
+
+			</section>
+
+			<!-- Post Hero (replaces the generic wrapper title) -->
+			<div class="post-hero">
+				<div class="container">
+					<p class="post-breadcrumb"><a href="home.html">Home</a> &rarr; <a href="home.html#highlights">Blog</a> &rarr; Goal Setting</p>
+					<span class="post-tag">Goal Setting</span>
+					<h2>Your Best Year Yet: A Practical Guide to Goals That Actually Stick</h2>
+					<div class="post-meta">
+						<span>&#128337; <strong>8 min read</strong></span>
+						<span>&#128197; <strong>April 2026</strong></span>
+						<span>&#127381; <strong>Free planner inside</strong></span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main -->
+			<section id="main" class="wrapper style2">
+				<div class="title" style="visibility:hidden; height:0; overflow:hidden;">Blog Post</div>
+				<div class="container">
+					<div class="row gtr-150">
+						<div class="col-8 col-12-medium imp-medium">
+
+							<div id="content">
+								<article class="box post">
+
+									<!-- Featured image -->
+									<a href="#" class="image featured">
+										<img src="images/Your Best.png" alt="Person writing in a planner at a desk" />
+									</a>
+
+									<!-- Intro -->
+									<p>Every January, millions of people write down their goals. By February, most have abandoned them. Not because the goals were wrong, but because the system behind them was.</p>
+
+									<p>This isn't another "set SMART goals" post. This is about building a structure that actually works when motivation runs dry, which it will, and life gets complicated, which it does.</p>
+
+									<div class="post-highlight">
+										<p>The problem isn't that you don't know what you want. The problem is you haven't built an environment that makes it easy to become the person who does those things consistently.</p>
+									</div>
+
+									<!-- Table of contents -->
+									<div class="post-toc">
+										<h4>In this post</h4>
+										<ol>
+											<li><a href="#step1">Start with your values, not your goals</a></li>
+											<li><a href="#step2">Turn values into 90-day targets</a></li>
+											<li><a href="#step3">Break targets into weekly actions</a></li>
+											<li><a href="#step4">Build the habit, not the outcome</a></li>
+											<li><a href="#step5">The weekly review that keeps it alive</a></li>
+											<li><a href="#resource">Get the free planner</a></li>
+										</ol>
+									</div>
+
+									<div class="post-body">
+
+										<!-- Step 1 -->
+										<h3 id="step1">1. Start with your values, not your goals</h3>
+
+										<p>Most people start goal-setting by asking "what do I want this year?" That's the wrong first question. Goals change. Life changes. But your values, what genuinely matters to you, stay far more stable.</p>
+
+										<p>Before writing a single goal, answer these three questions honestly:</p>
+
+										<div class="post-steps">
+											<div class="post-step">
+												<div class="post-step-num">1</div>
+												<div class="post-step-content">
+													<h4>What do I want more of in my life?</h4>
+													<p>Think in broad categories: learning, freedom, connection, impact, stability, creativity. Don't filter yourself here.</p>
+												</div>
+											</div>
+											<div class="post-step">
+												<div class="post-step-num">2</div>
+												<div class="post-step-content">
+													<h4>What do I want less of?</h4>
+													<p>Stress, wasted time, financial worry, comparison, or situations that drain you. These tell you just as much about your values as the positives do.</p>
+												</div>
+											</div>
+											<div class="post-step">
+												<div class="post-step-num">3</div>
+												<div class="post-step-content">
+													<h4>What would I regret not pursuing?</h4>
+													<p>Regret is a powerful signal. It points directly at the things that matter most to you, the things that feel "safe to skip" now but won't feel safe later.</p>
+												</div>
+											</div>
+										</div>
+
+										<p>From your answers, identify your top 3 values for this season of life. These become your filter for every goal you set. If a goal doesn't connect to at least one value, cut it.</p>
+
+										<!-- Step 2 -->
+										<h3 id="step2">2. Turn values into 90-day targets</h3>
+
+										<p>Annual goals are too far away to feel real. 90 days is short enough to feel urgent, long enough to see real change. For each of your 3 values, define one clear target, something you could achieve in the next 12 weeks.</p>
+
+										<p>A good 90-day target is:</p>
+
+										<ul>
+											<li>Specific enough that you'd know if you achieved it</li>
+											<li>Ambitious enough that you'd be proud of it</li>
+											<li>Within your control, not dependent on other people's decisions</li>
+										</ul>
+
+										<div class="post-highlight">
+											<p><strong>Example:</strong> Instead of "get healthier" (vague, annual), try "complete 3 workouts per week for 12 consecutive weeks" (specific, 90-day, within your control).</p>
+										</div>
+
+										<!-- Free resource CTA — placed mid-post -->
+										<div class="post-resource-cta" id="resource">
+											<div class="planner-thumb">
+												<span>Free<br>Planner</span>
+											</div>
+											<div class="cta-text">
+												<h4>Get the 2025 Productivity Planner — Free</h4>
+												<p>Includes a 90-day goal tracker, weekly review template, and daily focus blocks. Used by students across Nigeria and beyond.</p>
+												<a href="home.html#free-resource" class="button style1">Download free PDF</a>
+											</div>
+										</div>
+
+										<!-- Step 3 -->
+										<h3 id="step3">3. Break targets into weekly actions</h3>
+
+										<p>A 90-day target is still too abstract to act on today. The bridge between your target and your daily life is the weekly action, the specific thing you'll do each week that moves you closer.</p>
+
+										<p>Every Sunday (or whenever your week resets), identify 3 to 5 weekly actions tied to your 90-day targets. Write them down somewhere visible, not buried in an app. Physical visibility matters.</p>
+
+										<div class="post-highlight">
+											<p>A weekly action isn't a to-do item. It's a recurring commitment: "I will do X, Y times, on these days." The schedule matters as much as the task itself.</p>
+										</div>
+
+										<!-- Step 4 -->
+										<h3 id="step4">4. Build the habit - not the outcome</h3>
+
+										<p>Here's the part most goal advice skips: you can't control outcomes. You can control behaviour. A student aiming to graduate with first-class honours can't control the exam results, but they can control how many hours they study, how many past papers they complete, and how consistently they show up.</p>
+
+										<p>Shift your focus from outcomes to habits. Ask yourself: what does the person who achieves this goal do consistently? Then start doing those things, before you feel ready, before you see results, before it feels natural.</p>
+
+										<p>It won't feel natural for a while. That's completely normal. The feeling follows the action, not the other way around.</p>
+
+										<!-- Step 5 -->
+										<h3 id="step5">5. The weekly review that keeps it all alive</h3>
+
+										<p>Everything above falls apart without a weekly review. This is the single habit that separates people who achieve their goals from people who set them and forget them.</p>
+
+										<p>Your weekly review doesn't need to be long. Set aside 15 minutes at the same time every week and answer four questions:</p>
+
+										<div class="post-steps">
+											<div class="post-step">
+												<div class="post-step-num">1</div>
+												<div class="post-step-content">
+													<h4>What did I complete last week?</h4>
+													<p>Celebrate wins, however small. Progress compounds.</p>
+												</div>
+											</div>
+											<div class="post-step">
+												<div class="post-step-num">2</div>
+												<div class="post-step-content">
+													<h4>What did I miss, and why?</h4>
+													<p>No judgment, just diagnosis. If you missed the same thing twice, the system needs to change, not your willpower.</p>
+												</div>
+											</div>
+											<div class="post-step">
+												<div class="post-step-num">3</div>
+												<div class="post-step-content">
+													<h4>What's the most important thing for next week?</h4>
+													<p>Pick one thing that, if done, would make next week a success regardless of everything else.</p>
+												</div>
+											</div>
+											<div class="post-step">
+												<div class="post-step-num">4</div>
+												<div class="post-step-content">
+													<h4>Am I still aligned with my values?</h4>
+													<p>Occasionally your goals need adjusting. That's not failure, it's growth. Your values should remain stable; the targets and actions can flex.</p>
+												</div>
+											</div>
+										</div>
+
+										<p>That's it. No 2-hour planning session. No complex system. Just 15 minutes of honest reflection and intentional planning, done consistently every week.</p>
+
+										<div class="post-highlight">
+											<p>The gap between where you are and where you want to be isn't talent. It isn't luck. It's the accumulation of small, consistent actions that you take when no one is watching and nothing feels urgent.</p>
+										</div>
+
+									</div><!-- end .post-body -->
+
+									<!-- Author bio -->
+									<!-- <div class="post-author-bio">
+                                        <div class="author-avatar" >
+										</div>
+										<div class="author-bio-text">
+											<h4>Written by the Teekafy team</h4>
+											<p>Teekafy shares practical guides on productivity, skill-building, and career growth for students and early professionals. Everything here is tested in real life — no filler, no fluff.</p>
+										</div>
+									</div> -->
+
+								</article>
+							</div>
+
+						</div>
+
+						<!-- Sidebar -->
+						<div class="col-4 col-12-medium">
+							<div id="sidebar">
+
+								<section class="box">
+									<header>
+										<h2>Free productivity planner</h2>
+									</header>
+									<p>Goal tracker, weekly review template, and daily focus blocks, all in one free PDF.</p>
+									<a href="home.html#free-resource" class="button style1">Download free</a>
+								</section>
+
+								<section class="box">
+									<header>
+										<h2>In this post</h2>
+									</header>
+									<ul class="style3">
+										<li><a href="#step1">Start with your values</a></li>
+										<li><a href="#step2">90-day targets</a></li>
+										<li><a href="#step3">Weekly actions</a></li>
+										<li><a href="#step4">Build the habit</a></li>
+										<li><a href="#step5">Weekly review</a></li>
+									</ul>
+								</section>
+
+								<section class="box">
+									<header>
+										<h2>You might also like</h2>
+									</header>
+									<ul class="style2">
+										<li>
+											<article class="box post-excerpt">
+												<h3><a href="home.html#">Discipline &gt; Motivation</a></h3>
+												<p>Why systems beat willpower every time, and how to build yours.</p>
+											</article>
+										</li>
+										<li>
+											<article class="box post-excerpt">
+												<h3><a href="home.html#">Now to Infinity</a></h3>
+												<p>A mindset shift that changes how you see your own potential.</p>
+											</article>
+										</li>
+									</ul>
+								</section>
+
+							</div>
+						</div>
+
+					</div>
+
+					<!-- Related posts (full width below the content row) -->
+					<div style="margin-top: 4em; padding-top: 3em; border-top: 1px solid #eee;">
+						<h3 style="text-align:center; color:#484d55; text-transform:uppercase; letter-spacing:0.15em; font-size:0.85em; margin-bottom:2em;">More posts you'll like</h3>
+						<div class="related-posts-grid">
+							<div class="related-post-card">
+								<img src="images/pic03.jpg" alt="Discipline over motivation" />
+								<div class="card-body">
+									<span class="post-tag">Productivity</span>
+									<h4><a href="home.html#">Discipline &gt; Motivation — why systems beat willpower every time</a></h4>
+								</div>
+							</div>
+							<div class="related-post-card">
+								<img src="images/pic04.jpg" alt="Now to infinity mindset" />
+								<div class="card-body">
+									<span class="post-tag">Mindset</span>
+									<h4><a href="home.html#">Now to Infinity — embracing your limitless potential</a></h4>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<section id="footer" class="wrapper">
+				<div class="title">Say Hi</div>
+				<div class="container">
+					<header class="style1">
+						<h2>Have a question or concern?</h2>
+						<p>I'd be happy to chat.</p>
+					</header>
+					<div class="row">
+						<div class="col-6 col-12-medium">
+							<section>
+								<form method="post" action="#">
+									<div class="row gtr-50">
+										<div class="col-6 col-12-small">
+											<input type="text" name="name" id="contact-name" placeholder="Name" />
+										</div>
+										<div class="col-6 col-12-small">
+											<input type="text" name="email" id="contact-email" placeholder="Email" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" class="style1" value="Send" /></li>
+												<li><input type="reset" class="style2" value="Reset" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+						</div>
+						<div class="col-6 col-12-medium">
+							<section class="feature-list small">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<section>
+											<h3 class="icon solid fa-home">Mailing Address</h3>
+											<p>Teekafy<br />25 Unity Rd<br />Surulere, NG 112212</p>
+										</section>
+									</div>
+									<div class="col-6 col-12-small">
+										<section>
+											<h3 class="icon solid fa-comment">Social</h3>
+											<p>
+												<a href="#">@tee-kafy</a><br />
+												<a href="#">linkedin.com/tee-kafy</a><br />
+												<a href="#">facebook.com/tee-kafy</a>
+											</p>
+										</section>
+									</div>
+									<div class="col-6 col-12-small">
+										<section>
+											<h3 class="icon solid fa-envelope">Email</h3>
+											<p><a href="#">info@tee-kafy</a></p>
+										</section>
+									</div>
+									<div class="col-6 col-12-small">
+										<section>
+											<h3 class="icon solid fa-phone">Phone</h3>
+											<p>(234) 808-154-6774</p>
+										</section>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div id="copyright">
+						<ul>
+							<li>&copy; Teekafy.</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
